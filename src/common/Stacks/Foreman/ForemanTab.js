@@ -9,7 +9,7 @@ import MyAccount from '../../../views/MyAccount';
 import {commonStyles} from '../../../utils/commonStyles';
 import {responsiveScale} from '../../../utils';
 import Deposit from '../../../views/Supervisor/Deposit';
-import Collection from '../../../views/Supervisor/Collection';
+import IncidentReportList from '../../../views/Foreman/IncidentReportList';
 import FMR from '../../../views/Supervisor/FMR';
 
 const {colors} = myDefaultTheme;
@@ -89,8 +89,8 @@ const ForemanTab = () => {
           ),
           tabBarLabel: 'Incident Report',
         }}
-        name="Collection"
-        component={Collection}
+        name="IncidentReportList"
+        component={IncidentReportList}
       />
       <Tab.Screen
         options={{

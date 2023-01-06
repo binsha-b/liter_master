@@ -22,6 +22,8 @@ import ForemanConfirm from '../../../views/Foreman/ForemanConfirm';
 import SaleCompleted from '../../../views/Foreman/SaleCompleted';
 import FuelOrder from '../../../views/Foreman/FuelOrder';
 import FuelOrderType from './../../../views/Foreman/FuelOrderType';
+import IncidentReportList from './../../../views/Foreman/IncidentReportList';
+import AddIncidentReport from './../../../views/Foreman/AddIncidentReport';
 const Stack = createStackNavigator();
 
 const ForemanStack = () => {
@@ -58,17 +60,17 @@ const ForemanStack = () => {
               options={{headerShown: true, headerTitle: ''}}
           />
           <Stack.Screen name="FuelOrderType" component={FuelOrderType} />
-     {/* <Stack.Screen
-        name="SurveyType"
-        component={SurveyType}
-        options={() => ({headerTitle: ''})}
-      />
-       <Stack.Screen
-        name="SurveyQuestions"
-        component={SurveyQuestions}
+     <Stack.Screen
+        name="IncidentReportList"
+        component={IncidentReportList}
         options={{headerShown: true, headerTitle: ''}}
       />
-      <Stack.Screen
+        <Stack.Screen
+        name="AddIncidentReport"
+        component={AddIncidentReport}
+        options={{headerShown: true, headerTitle: ''}}
+      />
+      {/*<Stack.Screen
         name="SurveyConfirm"
         component={SurveyConfirm}
         options={{headerShown: true, headerTitle: 'Confirm Survey'}}

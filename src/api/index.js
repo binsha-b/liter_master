@@ -46,7 +46,16 @@ export const uploadImage = (formData, config) =>
     //   return formData;
     // },
   });
-
+  export const uploadVideo = (formData, config) =>
+  axios.post('upload_video', formData, {
+    ...config,
+    headers: {
+      'Content-Type': 'multipart/form-data',
+    },
+    // transformRequest: () => {
+    //   return formData;
+    // },
+  });
 export const submitSurvey = body => axios.post('add_survey', body);
 
 export const getSurveyStatus = body => axios.post('get_survey_status', body);
@@ -80,5 +89,9 @@ export const getFmr = (token) =>
 export const FuelOrderList = () => axios.get('list_fuel_order');
 
 export const OrderFuel = body => axios.post('order_fuel', body);
+
+export const ListIncidentReport = () => axios.post('list_incident_report');
+
+export const submitIncidentReport = body => axios.post('add_incident_report', body);
 
 

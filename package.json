@@ -44,7 +44,8 @@
     "react-native-share": "^8.0.0",
     "react-native-size-matters": "^0.4.0",
     "react-native-vector-icons": "^9.2.0",
-    "react-native-version-check": "^3.4.3"
+    "react-native-version-check": "^3.4.3",
+    "react-native-video": "^5.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
